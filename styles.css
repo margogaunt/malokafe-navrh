@@ -358,8 +358,23 @@ p { margin: 0 0 1em; }
 .js .is-loaded .hero__strip img { clip-path: inset(0 0 0 0); }
 .js .is-loaded .hero__text { opacity: 1; transform: none; }
 
+/* ---------- Vodoznak návrhu ---------- */
+.watermark {
+  position: fixed; inset: 0 0 0 var(--rail); z-index: 30;
+  display: grid; place-items: center; overflow: hidden;
+  pointer-events: none; user-select: none;
+}
+.watermark span {
+  font-family: var(--font-display); font-weight: 600;
+  font-size: clamp(5rem, 17vw, 15rem); line-height: 1;
+  letter-spacing: .08em; text-transform: uppercase;
+  color: rgba(var(--wood-rgb), .3);
+  transform: rotate(-24deg);
+}
+
 /* ---------- Responzivita ---------- */
 @media (max-width: 960px) {
+  .watermark { left: 0; }
   .topbar {
     display: flex; align-items: center; justify-content: space-between;
     position: sticky; top: 0; z-index: 50;

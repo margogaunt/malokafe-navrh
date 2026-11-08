@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Malö kafe – návrh úvodní stránky</title>
+  <meta name="description" content="Návrh úvodní stránky webu kavárny Malö kafe v Ostravě.">
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Oswald:wght@200..600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#obsah">Přeskočit na obsah</a>
+
+  <header class="topbar">
+    <a class="logo" href="index.html" aria-label="Malö kafe – úvod"><img class="logo__mark" src="logo-svetle.png" width="320" height="320" alt=""><span class="logo__name">MALÖ</span><span class="logo__sub">kafe</span></a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu" aria-label="Otevřít menu"><span></span></button>
+  </header>
+
+  <aside class="rail" id="menu">
+    <a class="logo" href="index.html" aria-label="Malö kafe – úvod"><img class="logo__mark" src="logo-svetle.png" width="320" height="320" alt=""><span class="logo__name">MALÖ</span><span class="logo__sub">kafe</span></a>
+    <nav class="rail__nav" aria-label="Hlavní menu">
+      <ul>
+        <li><a href="index.html" aria-current="page"><span class="t">Úvod</span></a></li>
+        <li><span class="is-off" aria-disabled="true">Nabídka</span></li>
+        <li><span class="is-off" aria-disabled="true">Kontakt</span></li>
+      </ul>
+    </nav>
+    <div class="rail__foot">
+      <p class="status" data-status><span class="status__dot"></span><span class="status__text">Po–Pá 7:30–18:30</span></p>
+      <p class="rail__hours">Po–Pá 7:30–18:30<br>So–Ne 9:00–18:30</p>
+      <div class="social">
+        <a href="https://www.instagram.com/malokafeostrava/" target="_blank" rel="noopener" aria-label="Instagram Malö kafe">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor"/></svg>
+        </a>
+        <a href="https://www.facebook.com/notroublefm/" target="_blank" rel="noopener" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M15 3h-2.5A4.5 4.5 0 0 0 8 7.5V10H5.5v4H8v7h4v-7h3l.5-4H12V7.5c0-.3.2-.5.5-.5H15z"/></svg>
+        </a>
+      </div>
+    </div>
+  </aside>
+  <div class="scrim" aria-hidden="true"></div>
+
+  <div class="sign" role="complementary" aria-label="Aktuálně: hledáme posilu">
+    <div class="sign__strings" aria-hidden="true"></div>
+    <div class="sign__board">
+      <span class="sign__kicker">Aktuálně</span>
+      <p class="sign__title">Hledáme posilu do&nbsp;týmu</p>
+      <p class="sign__roles">Barista a obsluha · výpomoc do&nbsp;kuchyně</p>
+    </div>
+  </div>
+
+  <main class="main" id="obsah">
+    <section class="hero">
+      <div class="hero__strip">
+        <img src="head-bar.jpg" width="961" height="429" alt="Bar Malö kafe se zelenou stěnou, kávovarem, mlýnkem a ceníkem z dřevěných latěk">
+      </div>
+      <div class="hero__text">
+        <span class="kicker kicker--light">Výběrová kavárna · Ostrava</span>
+        <h1 class="hero__name">Malö kafe</h1>
+        <p class="hero__title">Káva, snídaně a&nbsp;dorty kousek od&nbsp;OC&nbsp;Laso</p>
+        <p class="hero__lead">Prosvětlená kavárna na ulici 28. října. Na mlýnku máme kávu z&nbsp;českých pražíren, v&nbsp;kuchyni snídaně pro každého a&nbsp;vzadu dětský koutek.</p>
+        <p class="status hero__status" data-status><span class="status__dot"></span><span class="status__text">Po–Pá 7:30–18:30, So–Ne 9:00–18:30</span></p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="kicker">Malö kafe</span>
+          <h2>Co u&nbsp;nás najdete</h2>
+        </div>
+
+        <article class="feature">
+          <div class="feature__media reveal"><img src="kava-prazirny.webp" width="1440" height="1920" loading="lazy" alt="Dva sáčky výběrové kávy: Etiopie od Mia Coffee a Wonderland od CHROAST"></div>
+          <div class="feature__body reveal">
+            <span class="feature__num">01</span>
+            <h3>Výběrová káva</h3>
+            <p>Kvalita je pro nás na prvním místě, a&nbsp;proto na mlýnku máme kávu z&nbsp;českých pražíren: Mia Coffee, rodinnou pražírnu ze severu Čech, a&nbsp;CHROAST z&nbsp;Hradce Králové.</p>
+          </div>
+        </article>
+
+        <article class="feature feature--flip">
+          <div class="feature__media reveal"><img src="avo-toast.jpg" width="1125" height="2000" loading="lazy" alt="Avo toast se zastřeným vejcem, rukolou a hráškovými výhonky"></div>
+          <div class="feature__body reveal">
+            <span class="feature__num">02</span>
+            <h3>Snídaně</h3>
+            <p>Slané, sladké, lehké i&nbsp;vydatné. Vybere si každý: vege, maso i&nbsp;bezlepek.</p>
+            <ul class="mini-list">
+              <li>Avo toast</li><li>Míchaná vejce</li><li>Lívanec z podmáslí</li><li>Párečky od Bobra</li><li>Malö snídaně</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="feature">
+          <div class="feature__media reveal"><img src="livanec.jpg" width="480" height="853" loading="lazy" alt="Lívanec se zakysanou smetanou, jahodami, borůvkami a mátou na zeleném stole"></div>
+          <div class="feature__body reveal">
+            <span class="feature__num">03</span>
+            <h3>Dorty a&nbsp;sladké</h3>
+            <p>Ke kávě vždycky něco dobrého na zub. Dezerty pečeme sami a&nbsp;lívanec z&nbsp;podmáslí s&nbsp;ovocem patří k&nbsp;nejoblíbenějším snídaním.</p>
+          </div>
+        </article>
+
+        <article class="feature feature--flip">
+          <div class="feature__media reveal"><img src="koutek.jpg" width="1080" height="1440" loading="lazy" alt="Dětský koutek se stanem, látkovými boxy na hračky a kobercem s mapou"></div>
+          <div class="feature__body reveal">
+            <span class="feature__num">04</span>
+            <h3>Dětský koutek</h3>
+            <p>V&nbsp;zadní části kavárny je koutek se stanem a&nbsp;hračkami, takže si kávu v&nbsp;klidu vychutnají i&nbsp;rodiče s&nbsp;dětmi.</p>
+          </div>
+        </article>
+
+        <article class="feature">
+          <div class="feature__media reveal"><img src="kava-pivo.jpg" width="1200" height="1600" loading="lazy" alt="Cappuccino s latte art a sklenice čepovaného piva na dřevěném prkénku"></div>
+          <div class="feature__body reveal">
+            <span class="feature__num">05</span>
+            <h3>Tak zajdem na jedno?</h3>
+            <p>Kromě kávy u&nbsp;nás načepujeme i&nbsp;pivo, nabízíme drinky a&nbsp;čas od&nbsp;času i&nbsp;sezónní speciály.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer main">
+    <div class="wrap footer__grid">
+      <a class="logo" href="index.html" aria-label="Malö kafe – úvod"><img class="logo__mark" src="logo-svetle.png" width="320" height="320" alt=""><span class="logo__name">MALÖ</span><span class="logo__sub">kafe</span></a>
+      <p>28. října 106/18, Moravská Ostrava<br>Po–Pá 7:30–18:30 · So–Ne 9:00–18:30</p>
+      <nav class="footer__links" aria-label="Odkazy v patičce">
+        <a href="https://www.instagram.com/malokafeostrava/" target="_blank" rel="noopener">Instagram</a>
+      </nav>
+      <p>© <span data-year>2026</span> Malö kafe</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
